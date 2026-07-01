@@ -1,6 +1,6 @@
 :root {
     --btn-link-blue: #1976D2;
-    --nav-footer-bg: #1a252f;
+    --footer-bg: #1a252f;
     --page-bg: #f8f9fa;
     --card-bg: #ffffff;
     --txt-black: #2c3e50;
@@ -13,7 +13,7 @@
     --header-bold: 700;
     --txt-medium: 500;
     --txt-small: 400;
-    --shadow: 0 0px 15px rgba(0, 0, 0, 0.9);
+    --shadow: 0 0px 15px rgba(0, 0, 0, 0.4);
 }
 *{
     box-sizing: border-box;
@@ -67,7 +67,7 @@ nav a{
     font-size: var(--hero-title);
     font-weight: var(--header-bold);
 }
-.desc{
+.desc,footer div{
     font-size: var(--font-normal);
     font-weight: var(--txt-small);
 }
@@ -80,3 +80,72 @@ nav a{
     border-radius: 8px;
     box-shadow: var(--shadow);
 }
+.services-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    gap: 30px;
+}
+.main-title{
+    font-size: var(--section-title);
+    font-weight: var(--header-bold);
+}
+.cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px; 
+    flex-wrap: wrap;
+}
+.card-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 15px 30px;
+    gap: 15px;
+   
+    box-shadow: var(--shadow);
+}
+i,.second-title{
+   font-weight: var(--header-bold);
+   font-size: var(--card-title);
+}
+hr{
+ width: 90%;  
+ align-self: center;
+}
+.about-sec{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 20px;
+    width: 100%;
+}
+.about-left{
+    width: 40%;
+}
+.about-right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+
+}
+.about-right hr{
+width: 100%;
+}
+footer{
+    display: flex;
+    background-color: var(--footer-bg);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+}
+
