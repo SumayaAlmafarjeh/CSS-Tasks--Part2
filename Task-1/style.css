@@ -12,7 +12,7 @@
     --font-normal: 16px;
     --header-bold: 700;
     --txt-medium: 500;
-    --txt-small: 400;
+    --txt-small: 300;
     --shadow: 0 0px 15px rgba(0, 0, 0, 0.4);
 }
 *{
@@ -67,7 +67,7 @@ nav a{
     font-size: var(--hero-title);
     font-weight: var(--header-bold);
 }
-.desc,footer div{
+.desc{
     font-size: var(--font-normal);
     font-weight: var(--txt-small);
 }
@@ -85,8 +85,8 @@ nav a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 40px;
-    gap: 30px;
+    margin: 60px;
+    gap: 40px;
 }
 .main-title{
     font-size: var(--section-title);
@@ -96,7 +96,7 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:20px; 
+    gap:40px; 
     flex-wrap: wrap;
 }
 .card-box{
@@ -107,7 +107,6 @@ nav a{
     width: 300px;
     padding: 15px 30px;
     gap: 15px;
-   
     box-shadow: var(--shadow);
 }
 i,.second-title{
@@ -127,10 +126,9 @@ hr{
     width: 100%;
 }
 .about-left{
-    width: 40%;
+    width: 350px;
 }
 .about-right{
-    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -147,5 +145,35 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 15px 30px;
+    margin-top: 20px;
+}
+@media(max-width:992px){
+    :root {
+    --hero-title: 35px;
+    --section-title: 32px;  
+}
+    .about-sec{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-right,.about-left{
+        width: 80%;
+    }
+}
+@media(max-width:576px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+     :root {
+    --hero-title: 30px;
+    --section-title: 23px; 
+    --logo: 16px;
+    --card-title: 18px;
+    --font-normal: 14px;
+}
+
 }
 

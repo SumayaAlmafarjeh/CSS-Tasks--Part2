@@ -1,0 +1,121 @@
+:root{
+    --bg-color: #3499dd;
+    --text-main: #3c3131;
+    --txt-gray:#A4A09A;
+    --text-white:#ffffff;
+    --txt-size-title:32px;
+    --txt-size-normal:16px;
+    --txt-size-secondary:12px;
+    --bg-card:#ffffff;
+    --bg-border:#25252742;
+    --bg-input:#f2f2f2;
+    --border-raduis:5px;
+    --txt-light:400;  
+    --txt-medium:600;
+    --txt-bold:800;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-white);
+}
+
+.signin-box{
+    width:350px;
+    background-color: var(--bg-card);
+    border-radius: var(--border-raduis);
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 30px 20px;
+    box-shadow:0 0px 14px var(--bg-border);
+    color: var(--text-main);
+    font-weight: var(--txt-light);
+}
+h1{
+    font-weight: var(--txt-bold);
+}
+p{
+    font-size: var(--txt-size-secondary);
+    font-weight: var(--txt-light);
+}
+.txt-gray{
+    color: var(--txt-gray);
+}
+
+.imp-txt{
+    color: var(--bg-color);
+}
+.name-container{
+    display: flex;
+    gap: 10px;
+}
+.name-container input{
+    width: 50%;
+}
+
+input[type="email"],input[type="password"], .name-container input{
+    width: 100%;
+}
+
+
+.signup-btn{
+    background-color: var(--bg-color);
+    color: var(--text-white);
+    border: none;
+    border-radius: var(--border-raduis);
+    padding: 10px;
+    font-weight: var(--txt-medium);
+    width: 40%;
+}
+input{
+    border-radius: var(--border-raduis);
+    padding: 12px;
+    outline:none;
+    border: 1px solid var(--light-gray);
+    background-color: var(--bg-input);
+}
+
+label{
+    display: flex;
+    gap: 5px;
+    align-self: flex-start;
+    margin-top: 10px;
+    color: var(--text-main);
+}
+label, .footer-sec div{
+    font-size: var(--txt-size-secondary);
+}
+.footer-sec{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: var(--txt-light);
+    gap:10px;
+}
+.footer-sec a{
+    color: var(--text-white);
+}
+@media(max-width:992px){
+    body{
+        margin-top: 12px;
+        gap: 15px;
+    }
+    .signin-box{
+        gap: 15px;
+    }
+}
+

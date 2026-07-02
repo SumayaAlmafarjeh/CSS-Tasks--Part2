@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>page1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    
+    <div class="signin-box">
+        <h1>Sign up</h1>
+        <p class="txt-gray">please fill in this form to create an account!</p>
+        <hr>
+        <div class="name-container">
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+        </div>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <input type="password" placeholder="Confirm Password" />
+
+        <div>
+             <label for="terms" class="txt-gray"><input id="terms" type="checkbox" />I accept the<span class="imp-txt"> Terms of Use & Privacy Policy</span></label>
+        </div>
+        <button type="button" class="signup-btn">Sign Up</button>
+        
+    </div>
+    <div class="footer-sec">
+            <div>Allready have an account? <a href="#" class="light-txt">Login here</a></div>
+    </div>
 </body>
+
 </html>
