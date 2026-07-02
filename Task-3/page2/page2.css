@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+.page-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px;
+    background-color: rgb(24, 5, 46);
+    color: white;
+    font-weight: 600;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.vertical{
+    writing-mode: vertical-lr;
+    font-weight: 800; 
+}
+.horizantal{
+    color: rgb(202, 67, 67);
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+nav a{
+    text-decoration: none;
+    color: white;  
+}
+.main-sec{
+    gap: 90px;
+}
+.content-header,.content-middle{
+    gap: 15px;
+}
+#menu{
+    padding: 10px;
+    width: 350px;
+}
+.main-sec,.content-header,.content-middle,footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label,.content-footer,.content-header div{
+    font-size: small;
+}
+.content-footer,footer{
+    font-weight: 700;
+}
+label{
+    align-self: self-start;
+}
+footer{
+
+    background-color: bisque;
+    padding-top:70px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:992px) {
+    header{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .vertical{
+    writing-mode:horizontal-tb;
+    }
+    .vertical,header{
+        font-weight: 500;
+    }   
+}
+
