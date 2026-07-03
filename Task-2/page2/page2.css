@@ -1,0 +1,12 @@
+.color-purple-light{
+    background-color: #764efa8f;
+    border:none;
+}
+.color-purple-full{
+    background-color: #764efa;
+    border:none;
+}
+.color-purple-border{
+    border-color: #764efa;
+    color: #764efa;
+}
